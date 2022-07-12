@@ -63,15 +63,13 @@ Enqueue your javascript file and all media JS APIs.
                 });
                 frame.open();
 
-                // When an image is selected in the media frame...
+                // When multiple images are selected in the media frame...
                 frame.on('select', function() {
 
                     // Get media attachment details from the frame state
-                    let attachment = frame.state().get('selection').first().toJSON();
-                    // Log the attachment object for more info
+                    let attachment = frame.state().get('selection').toJSON();
+                    // Log the Array
                     console.dir(attachment);
-                    // Get the Image URL from the attachment object
-                    let image_url = attachment.url;
                 });
         });
 
