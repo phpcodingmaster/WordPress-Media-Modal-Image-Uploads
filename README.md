@@ -2,6 +2,7 @@
 
 This is a sample to show how you can open the admin media modal and how to get a single or multiple images selected via the WordPress admin media modal.
 Tested with WordPress Version 6.0 <br/>
+<b>SCREENSHOTS AVAILABLE AT THE BOTTOM OF THE WEB PAGE</b>
 
 # Enqueue your javascript file and all media JS APIs.
 
@@ -65,3 +66,16 @@ Enqueue your javascript file and all media JS APIs.
             // Log the array of images selected to the console
             console.dir(attachments);
         });
+
+# SCREENSHOTS
+
+![test1](https://user-images.githubusercontent.com/79761312/178506838-2e4cff20-f992-4553-8086-4686f7c4f15a.PNG)
+![test2](https://user-images.githubusercontent.com/79761312/178506874-4c9d711e-dde0-4849-baeb-3bd585f8b3fa.PNG)
+![test3](https://user-images.githubusercontent.com/79761312/178506901-c8e23456-b3bc-4230-95fa-0880ef89fa83.PNG)
+![test4](https://user-images.githubusercontent.com/79761312/178506945-510be71a-0474-46ee-aa24-448c6163d070.PNG)
+![test5](https://user-images.githubusercontent.com/79761312/178507016-858b81f7-8f0a-4129-94ac-017412c077a7.PNG)
+![test6](https://user-images.githubusercontent.com/79761312/178507040-65318d60-d703-47a0-8a23-d925a3943105.PNG)
+
+
+
+
