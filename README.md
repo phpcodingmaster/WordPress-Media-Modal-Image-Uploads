@@ -1,6 +1,6 @@
-# WordPress-Media-Modal-Image-Uploads
+# WordPress-Media-Modal-Image/File-Uploads
 
-This is a sample to show how you can open the admin media modal and how to get a single or multiple images selected via the WordPress admin media modal.
+This is a sample to show how you can open the admin media modal and how to get a single or multiple images/files selected via the WordPress admin media modal.
 Tested with WordPress Version 6.0 <br/>
 <b>SCREENSHOTS AVAILABLE AT THE BOTTOM OF THE WEB PAGE</b>
 
@@ -17,7 +17,7 @@ Enqueue your javascript file and all media JS APIs.
 
 (a) href="#" id="open_modal_link">Open Modal (/a)
 
-# How to open the Media Frame & Get Info for a single image
+# How to open the Media Frame & Get Info for a single image/file
 
         // Select open modal link
         let open_modal_link = document.getElementById("open_modal_link");
@@ -43,7 +43,7 @@ Enqueue your javascript file and all media JS APIs.
             let image_url = attachment.url;
         });
         
-# How to open the Media Frame & Get Info for a Multiple Images
+# How to open the Media Frame & Get Info for a Multiple Images/Files
 
         // Select open modal link
         let open_modal_link = document.getElementById("open_modal_link");
