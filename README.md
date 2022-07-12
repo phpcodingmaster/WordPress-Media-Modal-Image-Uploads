@@ -21,26 +21,29 @@ Enqueue your javascript file and all media JS APIs.
 
         // Select open modal link
         let open_modal_link = document.getElementById("open_modal_link");
+        
+        open_modal_link.addEventListener("click", function(e) {
+                e.preventDefault();
+                // Creates a new media frame
+                let frame = wp.media({
+                    title: "Add Your Own Title Here",
+                    button: {
+                        text: 'Add Your Own Text Here'
+                    },
+                    multiple: false
+                });
+                frame.open();
 
-        // Creates a new media frame
-        let frame = wp.media({
-            title: "Add Your Own Title Here",
-            button: {
-                text: 'Add Your Own Text Here'
-            },
-            multiple: false
-        });
-        frame.open();
+                // When an image is selected in the media frame...
+                frame.on('select', function() {
 
-        // When an image is selected in the media frame...
-        frame.on('select', function() {
-
-            // Get media attachment details from the frame state
-            let attachment = frame.state().get('selection').first().toJSON();
-            // Log the attachment object for more info
-            console.dir(attachment);
-            // Get the Image URL from the attachment object
-            let image_url = attachment.url;
+                    // Get media attachment details from the frame state
+                    let attachment = frame.state().get('selection').first().toJSON();
+                    // Log the attachment object for more info
+                    console.dir(attachment);
+                    // Get the Image URL from the attachment object
+                    let image_url = attachment.url;
+                });
         });
         
 # How to open the Media Frame & Get Info for a Multiple Images/Files
@@ -48,23 +51,28 @@ Enqueue your javascript file and all media JS APIs.
         // Select open modal link
         let open_modal_link = document.getElementById("open_modal_link");
 
-        // Creates a new media frame
-        let frame = wp.media({
-            title: "Add Your Own Title Here",
-            button: {
-                text: 'Add Your Own Text Here'
-            },
-            multiple: true
-        });
-        frame.open();
+        open_modal_link.addEventListener("click", function(e) {
+                e.preventDefault();
+                // Creates a new media frame
+                let frame = wp.media({
+                    title: "Add Your Own Title Here",
+                    button: {
+                        text: 'Add Your Own Text Here'
+                    },
+                    multiple: false
+                });
+                frame.open();
 
-        // When an image is selected in the media frame...
-        frame.on('select', function() {
+                // When an image is selected in the media frame...
+                frame.on('select', function() {
 
-            // Get media attachment details from the frame state
-            let attachments = frame.state().get('selection').toJSON();
-            // Log the array of images selected to the console
-            console.dir(attachments);
+                    // Get media attachment details from the frame state
+                    let attachment = frame.state().get('selection').first().toJSON();
+                    // Log the attachment object for more info
+                    console.dir(attachment);
+                    // Get the Image URL from the attachment object
+                    let image_url = attachment.url;
+                });
         });
 
 # SCREENSHOTS
