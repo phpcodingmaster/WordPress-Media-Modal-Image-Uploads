@@ -59,7 +59,7 @@ Enqueue your javascript file and all media JS APIs.
                     button: {
                         text: 'Add Your Own Text Here'
                     },
-                    multiple: false
+                    multiple: true
                 });
                 frame.open();
 
